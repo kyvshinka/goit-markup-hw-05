@@ -52,7 +52,7 @@
         <section class="hero">
             <div class="container">
                 <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
-                <button class="modal-btn btn" type="button">Заказать услугу</button>
+                <button class="modal-btn btn" type="button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
 
@@ -113,14 +113,23 @@
                     <li class="portfolio-item">
                         <img class="portfolio-item-img" src="./images/what-we-do/img.jpg" alt="Разработчик пишет код" width="370"
                             height="294">
+                            <p class="item-name">
+                                Десктопные приложения
+                            </p>
                     </li>
                     <li class="portfolio-item">
                         <img class="portfolio-item-img" src="./images/what-we-do/img-1.jpg" alt="Дизайнер разрабатывает интерфейс"
                             width="370" height="294">
+                            <p class="item-name">
+                                Мобильные приложения
+                            </p>
                     </li>
                     <li class="portfolio-item">
                         <img class="portfolio-item-img" src="./images/what-we-do/img-2.jpg" alt="Дизайнер подбирает цвета" width="370"
                             height="294">
+                            <p class="item-name">
+                                Дизайнерские решения
+                            </p>
                     </li>
                 </ul>
             </div>
@@ -347,10 +356,10 @@
                                 Украинки, 26</a>
                         </li>
                         <li class="address-item">
-                            <a class="footer-mail-link link" href="mailto:info@example.com">info@example.com</a>
+                            <a class="footer-mail-tel-link link" href="mailto:info@example.com">info@example.com</a>
                         </li>
                         <li class="address-item">
-                            <a class="footer-tel-link link" href="tel:+380991111111">+38 099 111 11 11</a>
+                            <a class="footer-mail-tel-link link" href="tel:+380991111111">+38 099 111 11 11</a>
                         </li>
                     </ul>
                 </address>
@@ -390,5 +399,15 @@
             </div>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close-btn" data-modal-close>
+                <svg class="modal-icon">
+                    <use href="./images/sprite.svg#close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+<script src="./js/modal.js"></script>
 </body>
 </html>
