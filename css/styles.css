@@ -147,6 +147,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-color);
+  transition: color var(--animation-duration) var(--animation-timing-function);
 }
 
 
@@ -165,7 +166,6 @@ body {
 .menu-link:focus {
   color: var(--accent-color);
   outline: none;
-  transition: color var(--animation-duration) var(--animation-timing-function);
 }
 
 .address-list {
@@ -181,13 +181,13 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-color);
+  transition: color var(--animation-duration) var(--animation-timing-function);
 }
 
 .mail-tel-link:hover,
 .mail-tel-link:focus {
   color: var(--accent-color);
   outline: none;
-  transition: color var(--animation-duration) var(--animation-timing-function);
 }
 
 .mail-icon {
@@ -248,13 +248,13 @@ body {
   background-color: var(--accent-color);
   color: var(--contrast-color);
   padding: 10px 32px;
+  transition: background-color var(--animation-duration) var(--animation-timing-function);
 }
 
 .modal-btn:hover,
 .modal-btn:focus {
   background-color: #188ce8;
   outline: none;
-  transition: background-color var(--animation-duration) var(--animation-timing-function);
 }
 
 /*---------END HERO---------*/
@@ -418,25 +418,25 @@ height: 120px;
   height: 44px;
   background-color: transparent;
   border-radius: 50%;
+  transition: background-color var(--animation-duration) var(--animation-timing-function);
 }
 
 .team-social-media-icon {
   width: 20px;
   height: 20px;
   fill: var(--icons-color);
+  transition: fill var(--animation-duration) var(--animation-timing-function);
 }
 
 .team-social-media-link:hover,
 .team-social-media-link:focus {
   background-color: var(--accent-color);
   outline: none;
- transition: background-color var(--animation-duration) var(--animation-timing-function);
 }
 
 .team-social-media-link:hover .team-social-media-icon,
 .team-social-media-link:focus .team-social-media-icon {
   fill: var(--contrast-color);
-  transition: fill var(--animation-duration) var(--animation-timing-function);
 }
 
 /*---------END TEAM---------*/
@@ -468,25 +468,25 @@ height: 120px;
   height: 92px;
   box-sizing: border-box;
   border-radius: 4px; 
+  transition: border var(--animation-duration) var(--animation-timing-function);
 }
 
 .clients-icon {
   width: 106px;
   height: 60px;
   fill: var(--icons-color);
+  transition: fill var(--animation-duration) var(--animation-timing-function);
 }
 
 .clients-list-link:hover .clients-icon,
 .clients-list-link:focus .clients-icon {
   fill: var(--accent-color);
-  transition: fill var(--animation-duration) var(--animation-timing-function);
 }
 
 .clients-list-link:hover,
 .clients-list-link:focus {
   border: 1px solid var(--accent-color);
   outline: none;
-  transition: border var(--animation-duration) var(--animation-timing-function);
 }
 
 /*---------END CLIENTS---------*/
@@ -521,12 +521,12 @@ height: 120px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--contrast-color);
+  transition: color var(--animation-duration) var(--animation-timing-function);
 }
 .map-link:hover,
 .map-link:focus {
   color: var(--accent-color);
   outline: none;
-  transition: color var(--animation-duration) var(--animation-timing-function);
 }
 .footer-mail-tel-link {
   font-style: normal;
@@ -534,12 +534,12 @@ height: 120px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-color);
+  transition: color var(--animation-duration) var(--animation-timing-function);
 }
 .footer-mail-tel-link:hover,
 .footer-mail-tel-link:focus {
   color: var(--accent-color);
   outline: none;
-  transition: color var(--animation-duration) var(--animation-timing-function);
 }
 
 .address-item:not(:last-child) {
@@ -573,13 +573,13 @@ height: 120px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+  transition: background-color var(--animation-duration) var(--animation-timing-function);
 }
 
 .join-sm-link:hover,
 .join-sm-link:focus {
   background-color: var(--accent-color);
   outline: none;
-  transition: background-color var(--animation-duration) var(--animation-timing-function);
 }
 
 .join-sm-icon {
@@ -612,6 +612,7 @@ height: 120px;
   letter-spacing: 0.03em;
   background-color: var(--icon-button-back-color);
   padding: 6px 22px;
+  transition: color var(--animation-duration) var(--animation-timing-function), background-color var(--animation-duration) var(--animation-timing-function), box-shadow var(--animation-duration) var(--animation-timing-function);
 }
 .filter-btn:hover,
 .filter-btn:focus {
@@ -620,7 +621,6 @@ height: 120px;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   outline: none;
-  transition: color var(--animation-duration) var(--animation-timing-function), background-color var(--animation-duration) var(--animation-timing-function), box-shadow var(--animation-duration) var(--animation-timing-function);
 }
 
 .portfolio-page-items {
@@ -641,11 +641,14 @@ height: 120px;
   overflow: hidden;
 }
 
+.portfolio-page-card {
+  transition: box-shadow var(--animation-duration) var(--animation-timing-function);
+}
+
 .portfolio-page-card:hover,
 .portfolio-page-card:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   outline: none;
-  transition: box-shadow var(--animation-duration) var(--animation-timing-function);
 }
 
 .overlay {
@@ -663,13 +666,12 @@ height: 120px;
   background-color: rgba(33, 150, 243, 0.9);
   overflow: auto;
   transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform var(--animation-duration) var(--animation-timing-function);
 }
 
 .portfolio-page-card:hover .overlay,
 .portfolio-page-card:focus .overlay {
  transform: translateY(0%);
- transition: transform var(--animation-duration) var(--animation-timing-function);
 }
 
 .portfolio-page-card-dscr {
@@ -720,7 +722,7 @@ height: 120px;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scaleY(1);
   min-width: 528px;
   min-height: 582px;
   background-color: var(--contrast-color);
